@@ -1,5 +1,7 @@
 # Default ignored files
 /caches/
+/libraries/
+/modules/
 /shelf/
 AndroidProjectSystem.xml
 compiler.xml
