@@ -1,14 +1,4 @@
-# Default ignored files
-/caches/
-/libraries/
-/modules/
-/shelf/
-AndroidProjectSystem.xml
-compiler.xml
-gradle.xml
-kotlinc.xml
-migrations.xml
-misc.xml
-runConfigurations.xml
-vcs.xml
-workspace.xml
+# Ignore all by default
+/*
+# Except copyright profiles
+!/copyright/
