@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Gradle-Plugins"
 include(":build-config")
+include(":conventions")
