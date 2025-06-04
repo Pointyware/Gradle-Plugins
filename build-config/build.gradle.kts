@@ -6,6 +6,8 @@ plugins {
     `kotlin-dsl`
 }
 
+group = "org.pointyware.gradle.buildconfig"
+
 kotlin {
     jvmToolchain(21)
 }
