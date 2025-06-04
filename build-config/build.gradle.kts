@@ -18,7 +18,7 @@ gradlePlugin {
     plugins {
         register("build-config") {
             id = "org.pointyware.cymatics.build-config"
-            implementationClass = "org.pointyware.cymatics.buildlogic.BuildConfigPlugin"
+            implementationClass = "org.pointyware.build.BuildConfigPlugin"
         }
     }
 }
