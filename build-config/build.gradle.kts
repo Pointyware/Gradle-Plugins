@@ -13,7 +13,8 @@ kotlin {
 }
 
 dependencies {
-    implementation(libs.kotlin.gradle.plugin)
+    compileOnly(libs.kotlin.gradle.plugin)
+    testImplementation(libs.kotlin.gradle.plugin)
 }
 
 gradlePlugin {
