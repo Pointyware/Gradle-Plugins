@@ -4,9 +4,8 @@
 
 plugins {
     `kotlin-dsl`
+    `maven-publish`
 }
-
-group = "org.pointyware.gradle.buildconfig"
 
 kotlin {
     jvmToolchain(21)
@@ -22,6 +21,25 @@ gradlePlugin {
         register("build-config") {
             id = "org.pointyware.cymatics.build-config"
             implementationClass = "org.pointyware.build.BuildConfigPlugin"
+        }
+    }
+}
+
+group = "org.pointyware.gradle.buildconfig"
+version = "0.1.0"
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = project.group.toString()
+            artifactId = project.name
+            version = project.version.toString()
+
+            pom {
+                name = "build-config-gradle-plugin"
+                description = "A Gradle plugin for generating BuildConfig files across multiple platforms."
+                url = "https://github.com/Pointyware/Gradle-Plugins"
+            }
         }
     }
 }
