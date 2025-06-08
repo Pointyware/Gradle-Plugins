@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Gradle-Plugins"
 //include (":app")
 include(":build-config")
+include(":test-app-android")
