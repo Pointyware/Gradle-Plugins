@@ -3,4 +3,5 @@
 
 # Tool Files
 /.gradle
+/.kotlin
 /local.properties
