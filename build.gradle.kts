@@ -7,4 +7,6 @@ version = "0.1.0"
 
 plugins {
     `kotlin-dsl` apply false
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.kotlin.android) apply false
 }
