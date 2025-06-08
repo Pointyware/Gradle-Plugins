@@ -1,3 +1,15 @@
+package org.pointyware.gradle.buildconfig
+
+import org.gradle.api.Action
+import org.gradle.api.Plugin
+import org.gradle.api.Project
+import org.gradle.api.logging.LogLevel
+import org.gradle.internal.cc.base.logger
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.io.File
+import java.util.Properties
 
 /**
  * Generates a BuildConfig kotlin file for the project that defines all the configured values.
