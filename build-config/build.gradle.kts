@@ -68,11 +68,8 @@ publishing {
     }
     repositories {
         maven {
-            name = "MavenCentral"
-            credentials {
-                username = System.getenv("MAVEN_CENTRAL_USERNAME") ?: ""
-                password = System.getenv("MAVEN_CENTRAL_PASSWORD") ?: ""
-            }
+            name = "project"
+            url = uri("build/maven")
         }
     }
 }
