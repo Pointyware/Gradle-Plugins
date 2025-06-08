@@ -39,6 +39,39 @@ publishing {
                 name = "build-config-gradle-plugin"
                 description = "A Gradle plugin for generating BuildConfig files across multiple platforms."
                 url = "https://github.com/Pointyware/Gradle-Plugins"
+
+                scm {
+                    connection = "scm:git:github.com/Pointyware/Gradle-Plugins.git"
+                    developerConnection = "scm:git:github.com/Pointyware/Gradle-Plugins.git"
+                }
+
+                licenses {
+                    license {
+                        name = "GNU General Public License v3.0"
+                        url = "https://www.gnu.org/licenses/gpl-3.0.html"
+                    }
+                }
+
+                organization {
+                    name = "Pointyware"
+                    url = "https://pointyware.org"
+                }
+
+                developers {
+                    developer {
+                        name = "Pointyware Team"
+                        url = "https://github.com/Pointyware"
+                    }
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            name = "MavenCentral"
+            credentials {
+                username = System.getenv("MAVEN_CENTRAL_USERNAME") ?: ""
+                password = System.getenv("MAVEN_CENTRAL_PASSWORD") ?: ""
             }
         }
     }
