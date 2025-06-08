@@ -73,3 +73,15 @@ publishing {
         }
     }
 }
+
+tasks.register("signAndUpload") {
+    // Sign the outputs of the maven publication with GPG
+
+    // Upload the signed artifacts to the Maven Central repository
+    // curl -X 'POST' \
+    //  'https://central.sonatype.com/api/v1/publisher/upload' \
+    //  -H 'accept: text/plain' \
+    //  -H 'Content-Type: multipart/form-data' \
+    //  -F 'bundle='
+    println("No-Op")
+}
