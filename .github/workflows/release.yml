@@ -28,7 +28,7 @@ jobs:
           ./gradlew :build-config:publishMavenPublicationToProject
 
       - name: Sign and Publish Plugins
-        env:
+#        env:
 #          GPG_SIGNING_KEY: ${{ secrets.GPG_SIGNING_KEY }}
 #          GPG_SIGNING_PASSWORD: ${{ secrets.GPG_SIGNING_PASSWORD }}
         run: |
