@@ -1,3 +1,10 @@
+package org.pointyware.gradle.buildconfig
+
+import org.gradle.api.provider.MapProperty
+import org.gradle.api.provider.Property
+import org.gradle.api.tasks.Input
+import java.io.File
+import java.util.Properties
 
 /**
  * Defines the available properties and methods for the BuildConfig plugin.
